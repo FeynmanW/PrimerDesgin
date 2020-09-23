@@ -27,9 +27,9 @@ Options:
 
 ### Usage example
 
+`input.csv` is provided too, and you can run the following command in a UNIX system to get familiar with it. Remember to put `primer.R` and `input.csv` under the same file directory unless using an absolute path.
+
 ```shell
 Rscript primer.R -o EP3_ICL3 -g 1 -n 10 -i input.csv
 ```
-
-### Input.csv
 
