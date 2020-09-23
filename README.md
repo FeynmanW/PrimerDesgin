@@ -1,7 +1,9 @@
 # PrimerDesign
 PrimerDesign is a small tool in order to avoid repeated operations which is frustating and time-consuming.
 ## primer.R
-This is an R script to concatenate two sequences: one is a 25bp overlap sequence for Gibson assembly, and the other is a sequence about 20bp whose length is adjusted based on Tm (melting temperature). This program can be used as a command line tool in a UNIX system, providing the necessary parameters. And the output file is a `.csv` file containing primer sequence generated.
+This is an R script to concatenate two sequences: one is a 25bp overlap sequence for Gibson assembly, and the other is a sequence about 20bp whose length is adjusted based on Tm (melting temperature). 
+
+This program can be used as a command line tool in a UNIX system, providing the necessary parameters. The input file is a `.csv` file, in which each row contains overlap sequences and reference  sequence (contain different insertion sites) to generate a series of primers with the same 25bp overlap sequence, and And the output file is also  `.csv` files containing primer sequence generated, the number of which equals to row number of input file.
 
 ```shell
 Usage: primer.R [options]
@@ -28,4 +30,6 @@ Options:
 ```shell
 Rscript primer.R -o EP3_ICL3 -g 1 -n 10 -i input.csv
 ```
+
+### Input.csv
 

@@ -4,6 +4,12 @@
 
 # CRAN package
 CRAN_packages <- c("optparse")
+installLoad_CRAN <- function(package){
+  if (!require(package, character.only = T)) {
+    install.packages(package, dependencies = TRUE)
+    library(package, character.only = T, quietly = T)
+  }
+}
 sapply(CRAN_packages, installLoad_CRAN)
 
 library("optparse")
