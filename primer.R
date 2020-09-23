@@ -1,6 +1,11 @@
 #!/usr/bin/env Rscript
 # Title: Automatic construction of Primers for Sequence Insertion ####
 # Author: Wang Bo https://github.com/FeynmanW ####
+
+# CRAN package
+CRAN_packages <- c("optparse")
+sapply(CRAN_packages, installLoad_CRAN)
+
 library("optparse")
 
 # Parsing Arguments ############################################################
